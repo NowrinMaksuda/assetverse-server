@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ===== Stripe =====
+// ===== Stripe 
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
@@ -23,14 +23,14 @@ await client.connect();
 db = client.db('assetverse');
 console.log('MongoDB connected');
 
-// collections
+// collection
 
 const usersCol = db.collection('users');
 const assetsCol = db.collection('assets');
 const packagesCol = db.collection('packages');
 const requestsCol = db.collection('requests');
 
-// ===== Seed default packages =====
+// ===== Seed default packages ====
 
 const seedPackages = async () => {
   const count = await packagesCol.countDocuments();
