@@ -30,7 +30,7 @@ const assetsCol = db.collection('assets');
 const packagesCol = db.collection('packages');
 const requestsCol = db.collection('requests');
 
-// ===== Seed default packages ====
+// ===== Seed default packages
 
 const seedPackages = async () => {
   const count = await packagesCol.countDocuments();
