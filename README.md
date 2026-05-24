@@ -5,7 +5,6 @@
 It provides RESTful APIs for managing companies, employees, assets, requests, assigned assets, and subscription packages.  
 The server handles authentication, role-based access, payment integration (Stripe), and analytics.
 
----
 
 ## Features
 - **User Authentication**: Email/password login & optional Google login  
